@@ -1,6 +1,7 @@
 {
     "env":{
-        "MONGO_ATLAS_PW" :"******",
-        "DATABASE_NAME" : "RestFulApiTest"
+        "MONGO_ATLAS_PW" :"murshed",
+        "DATABASE_NAME" : "RestFulApiTest",
+        "SECRET_KEY": "secret"
     }
 }

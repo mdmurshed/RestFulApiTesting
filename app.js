@@ -21,6 +21,8 @@ mongoose.connect(url,{
 // })
 // every routing logs
 app.use(morgan('dev'));
+//static function 
+app.use('/uploads',express.static('uploads'))
 // body parser
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
@@ -38,6 +40,7 @@ app.use((req,res,next)=>{
 
 
 // Router which should handle requests
+app.use('/user',require('./api/route/user'))
 app.use('/products',require('./api/route/products'))
 app.use('/orders',require('./api/route/orders'))
 
